@@ -456,24 +456,32 @@ html, body {
   z-index: 0;
 }
 
-.herocontentanimatedtext {
- overflow: hidden;
- word-wrap: break-word;
- white-space: nowrap;
- animation: typing 2s steps(50) forwards;
- background-size: cover;
+.line-1{
+	positon: relative;
+    top: 500px;  
+    width: 24em;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);  
+	color: white;
+	background-size: cover;
 }
 
-@keyframes typing {
-  from { 
-    width: 0;
-    background-size: cover;
-  }
-
-  to { 
-    width: 500px;
-    background-size: cover;
-  }
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 3s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 505px;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
 }
 
 .hero-content {
@@ -608,6 +616,13 @@ html, body {
   animation-play-state: paused;
 }
 
+@media only screen and (max-width: 650px) {
+	.anim-typewriter{
+  animation: none;
+}
+
+}
+
 @media only screen and (max-width: 767px) {
   /* HEADER */
   /* HERO */
@@ -621,12 +636,10 @@ html, body {
     background-size: contain;
      color: white;
   }
-  .herocontentanimatedtext
-  {
-    animation: none;
-    background-size: contain;
-     color: white;
-  }
+	@keyframes typewriter{
+		from{width: 0;}
+		to{width: 52%;}
+	}
   .hero {
   height: 125%;
   width: 100%;
