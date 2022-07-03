@@ -13,5 +13,4 @@ jobs:
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_SIMON_LINDNER }}'
-          channelId: live
           projectId: simon-lindner
