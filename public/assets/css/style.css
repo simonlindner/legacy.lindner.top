@@ -438,7 +438,7 @@ html, body {
 ================================================== */
 .hero {
   background: url(../img/simonlindnercrop3.jpg) center no-repeat;
-  height: 125%;
+  height: 100%;
   width: 100%;
   display: table;
   position: relative;
@@ -472,7 +472,7 @@ html, body {
 
 /* Animation */
 .anim-typewriter{
-  animation: typewriter 3s steps(44) 1s 1 normal both,
+  animation: typewriter 2s steps(44) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
 }
 @keyframes typewriter{
@@ -489,6 +489,7 @@ html, body {
   display: table-cell;
   vertical-align: middle;
   position: relative;
+  margin-bottom: auto;
 }
 
 .hero-content h1 {
@@ -497,7 +498,7 @@ html, body {
   font-size: 40px;
   font-weight: 700;
   text-align: center;
-  margin: 0 auto;
+  margin: 70px auto 0;
   text-transform: uppercase;
 }
 
