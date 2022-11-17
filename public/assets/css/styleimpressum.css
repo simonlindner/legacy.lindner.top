@@ -300,6 +300,7 @@ html, body {
   font-size: 26px;
   line-height: 26px;
   color: #ffffff;
+filter:invert(100%);
   text-transform: uppercase;
 }
 
@@ -332,6 +333,7 @@ html, body {
   font-size: 14px;
   line-height: 14px;
   color: #ffffff;
+filter: invert(100%);
   text-transform: uppercase;
   border-bottom: 2px solid transparent;
   -webkit-transition: border-color 0.25s ease-in-out;
@@ -436,7 +438,6 @@ html, body {
 /* 
 ================================================== */
 .hero {
-  background: url(../img/simonlindnercrop3.jpg) center no-repeat;
   height: 100%;
   width: 100%;
   display: table;
@@ -488,6 +489,7 @@ html, body {
   vertical-align: middle;
   position: relative;
   margin-bottom: auto;
+background-color: #090909;
 }
 
 .hero-content h1 {
@@ -533,7 +535,7 @@ html, body {
 
 .hero-arrow a {
   font-size: 28px;
-  color: #ffffff;
+  color: #703373;
 }
 
 @-webkit-keyframes home-arrow-down {
@@ -1059,6 +1061,7 @@ html, body {
   color: #000;
   text-transform: uppercase;
   text-align: left;
+margin-top: 20px;
 }
 
 .section-skills h2:before {

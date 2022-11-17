@@ -4,7 +4,7 @@
  * Version: 65.0
  */
 
-
+@import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
 /* CUSTOM RESETS
 ================================================== */
 a, button {
@@ -46,11 +46,12 @@ html, body {
   background-color: #703373;
   padding: 0 15px;
   color: #ffffff;
-  height: 44px;
+  height: 44px;te
   line-height: 42px;
   border-radius: 0;
   border: 1px solid #703373;
   text-transform: uppercase;
+  padding-top: 12px;
 }
 
 .btn-inverted {
@@ -322,7 +323,13 @@ html, body {
     margin: auto;
     display: block;
 }
-
+.pictureSimon
+{
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+}
 .site-navigation .navbar-nav {
   padding-top: 23px;
 }
@@ -388,6 +395,14 @@ html, body {
 	  right:0px
   }
 
+}
+ @media only screen and (min-width: 805px) and (max-width: 1920px)  {
+#text1{
+	font-size:80pt;
+}
+#text2{
+	font-size:80pt;
+}
 }
 
  @media only screen and (min-width: 991px) and (max-width: 1130px)  {
@@ -565,7 +580,7 @@ input:checked + .slider:before {
 }
 
 .hero {
-  background: url(../img/simonlindnercrop3.jpg) center no-repeat;
+  background-color: #f6f6f6;
   height: 100%;
   width: 100%;
   display: table;
@@ -774,6 +789,13 @@ input:checked + .slider:before {
 }
 
 }
+@media only screen and (max-width: 804px) {
+#text1{
+font-size: 30pt;
+}
+#text2{
+font-size: 30pt;
+}}
 @media only screen and (max-width: 767px) {
   /* HEADER */
   /* HERO */
@@ -2286,6 +2308,8 @@ input:checked + .slider:before {
 /* Sections background: Quote */
 .section-quote {
   background: url(../img/SimonLindnerCyberdyneLinkedInBild.jpg) center no-repeat fixed;
+image-rendering: crisp-edges;
+	
 }
 
 .section-quote p {
@@ -2644,4 +2668,28 @@ textarea.form-control {
     height: 36px;
     width: 36px;
   }
+}
+#container {
+	position: absolute;
+	margin: auto;
+	width: 100%;
+	height: 80pt;
+	top: 0;
+	bottom: 0;
+	filter: url(#threshold) blur(0.6px);
+}
+@-moz-document url-prefix() {
+  #container{
+    filter: url(#threshold) ;
+  }
+}
+
+#text1, #text2 {
+	position: absolute;
+	width: 100%;
+	display: inline-block;
+	color:black;
+	text-align: center;
+	font-family: 'Raleway';
+	user-select: none;
 }

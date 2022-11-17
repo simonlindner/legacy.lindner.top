@@ -48,7 +48,8 @@ if (navigator.language == 'en')
 	{}
 	else
 	{
-		location.replace('https://simon-lindner.de/ForPeopleThatSpeakEnglish.html');
+		localStorage.setItem("language", "x");
+		setTimeout(window.alert("Your browser is set to English. Therefore you will now see the English version of the page. If you want to go to the German page, scroll down and click on 'Deutsch' ^^"),5000);
 	}
 }
 </script>
@@ -107,9 +108,9 @@ if (navigator.language == 'en')
 
                         <li class="page-scroll"><a href="#top">Home</a></li>
                         <li class="page-scroll"><a href="#intro">Intro</a></li>
-                        <li class="page-scroll"><a href="#me">Über Mich</a></li>
+                        <li class="page-scroll"><a href="#me">About me</a></li>
                         <li class="page-scroll"><a href="#history">History</a></li>
-                        <li class="page-scroll"><a href="#kontakt">Kontakt</a></li>
+                        <li class="page-scroll"><a href="#kontakt">Contact</a></li>
                     </ul><!-- /.navbar-nav -->
 
                 </div><!-- /.navbar-collapse -->
@@ -129,8 +130,8 @@ if (navigator.language == 'en')
         <!-- Hello section -->
 		<section class="site-section section-hello" id="intro">
 			<div class="container">
-				<h2>Hallo &amp; Willkommen</h2>
-				<p class="section-subtitle"><span>Auf meiner Website</span></p></div>
+				<h2>Hello &amp; Welcome</h2>
+				<p class="section-subtitle"><span>To my Website</span></p></div>
 		</section><!-- /.section-hello -->
         <!-- End Hello section -->
 
@@ -138,7 +139,7 @@ if (navigator.language == 'en')
 		<section class="section-background section-quote background-overlay text-center">
 			<div class="container">
 				<p>Quidquid agis, prudenter agas et respice finem</p>
-				<p>-Was auch immer du tust, handle klug und bedenke das Ende-</p>
+				<p>-Whatever you do, do it wisely and consider the end-</p>
 			</div>
 		</section><!-- /.section-quote -->
         <!-- End Quote section -->
@@ -248,13 +249,13 @@ if (navigator.language == 'en')
                     <div class="col-sm-6">
 					
 
-                        <h2>Über mich</h2>
-						<img class="pictureSimon" src="assets/img/simonlindnercrop.jpg" title="Simon Lindner"><h2></h2><p style="text-align: justify; width:auto">Hi ^^, <br> Ich bin Simon Lindner aktuell <span id="MeinAlter"></span> Jahre alt und arbeite bei der Cyberdyne IT GmbH in Köln als Dualer Student 
-						im Bereich Development. Mein Interesse an Informatik begann in der 8ten Klasse des Gymnasiums im Laufe des IT-Kurses. Dort habe ich erste Erfahrungen mit der IT und dem Programmieren, 
-						in Form von HTML und CSS gemacht. In den darauffolgenden Jahren habe ich mich intensiv mit Java beschäftigt und mein Abitur mit Informatik als drittem Abiturfach abgeschlossen. Nach der 
-						Schulzeit habe ich dann eine Herausforderung gesucht und diese in Cyberdyne gefunden. Mein Start in die Firma begann im Wintersemester 2021. Bis zum November 2022 habe ich dort im Bereich der 
-						Systemintegration und im IT-Service gearbeitet. Ab November 2022 bin ich dann in der Development Abteilung gestartet.
-						Da dort sehr viel mit Skripten und Automatisierungen gearbeitet wird, konnte ich infolgedessen mein Programmiersprachen Reservoir um Powershell erweitern. Zu dem habe ich Einblicke in Automatisierungen und Azure Devops gewonnen.</p>
+                        <h2>About me</h2>
+						<img class="pictureSimon" src="assets/img/simonlindnercrop.jpg" title="Simon Lindner"><h2></h2><p style="text-align: justify; width:auto">Hi ^^, <br> I'm Simon Lindner at the moment <span id="MeinAlter"></span> years old and work at Cyberdyne IT GmbH in Cologne as a dual student
+						in the area of ​​development. My interest in computer science started in the 8th grade of high school during the IT course. There I have my first experiences with IT and programming,
+						made in the form of HTML and CSS. In the years that followed, I worked intensively with Java and completed my high school diploma with computer science as the third high school subject. After
+						When I was at school I was looking for a challenge and found it in Cyberdyne. My start at the company began in the winter semester of 2021. Until November 2022 I worked there in the area of
+						System integration and worked in IT service. From November 2022 I started in the development department.
+						Since a lot of scripts and automations are used there, I was able to expand my programming language reservoir with Powershell. I also gained insights into automations and Azure Devops.</p>
 						<p><br></div>
 						<!-- <div class="col-sm-6" style="display:flex;">
 					<p><h2>Lebendiger Platzhalter</h2></p>
@@ -272,7 +273,7 @@ if (navigator.language == 'en')
             <div class="container">          
                 <div class="text-center section-diff-title">     
                     <h2>History</h2>
-                    <p>Bildungsweg und Erfahrungen</p>
+                    <p>Education and Experiences</p>
                 </div> 
                 <!-- Timeline --> 
                 <ul class="timeline">
@@ -287,17 +288,17 @@ if (navigator.language == 'en')
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <div class="timeline-date">
-                                    <p>Juni</p>
+                                    <p>June</p>
                                 </div><!-- /.timeline-date -->
                                 <div class="timeline-position">
-                                    <p>Praktikum beim WDR in Köln</p>
+                                    <p>Internship at the WDR in Cologne</p>
                                 </div><!-- /.timeline-position -->
                             </div><!-- /.timeline-heading -->
                             <div class="timeline-body">
                                 <div class="timeline-body-thumb">
                                     <img src="assets/img/wdr.png" class="img-res" alt="" >
                                 </div><!-- /.timeline-body-thumb -->
-                                <p style="text-align: justify">Im Zuge meines Schülerpraktikums konnte ich erste Einblicke in die Arbeit eines Fachinformatikers für Systemintegration in einem Großunternehmen gewinnen.</p>
+                                <p style="text-align: justify">In the course of my student internship, I was able to gain initial insights into the work of an IT specialist for system integration in a large company.</p>
                             </div><!-- /.timeline-body -->
                         </div><!-- /.timeline-panel -->
                     </li>
@@ -313,17 +314,17 @@ if (navigator.language == 'en')
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                <div class="timeline-position">
-                                    <p>Fachhochschulreife</p>
+                                    <p>Abitur</p>
                                 </div><!-- /.timeline-position -->
                                 <div class="timeline-date">
-                                    <p>Mai</p>
+                                    <p>May</p>
                                 </div><!-- /.timeline-date -->
                             </div><!-- /.timeline-heading -->
                             <div class="timeline-body">
                                 <div class="timeline-body-thumb">
                                     <img src="assets/img/Abitur.png" class="img-res" alt="">
                                 </div><!-- /.timeline-body-thumb -->
-                                <p style="text-align: justify">Abschluss der Schullaufbahn mit dem Abitur, Informatik als drittem Abiturfach und einem Abiturschnitt von 2,4.</p>
+                                <p style="text-align: justify">Completion of the school career with the Abitur, computer science as the third Abitur subject and an Abitur average of 2.4.</p>
                             </div><!-- /.timeline-body -->
                         </div><!-- /.timeline-panel -->
                     </li><!-- /.timeline-inverted -->
@@ -334,17 +335,17 @@ if (navigator.language == 'en')
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <div class="timeline-date">
-                                    <p>Oktober</p>
+                                    <p>October</p>
                                 </div><!-- /.timeline-date -->
                                 <div class="timeline-position">
-                                    <p>Duales IT-Studium | Cyberdyne</p>
+                                    <p>Dual IT-Study | Cyberdyne</p>
                                 </div><!-- /.timeline-position -->
                             </div><!-- /.timeline-heading -->
                             <div class="timeline-body">
                                 <div class="timeline-body-thumb">
                                     <img src="assets/img/CYBERDYNElogo.png" class="img-res" alt="" >
                                 </div><!-- /.timeline-body-thumb -->
-                                <p style="text-align: justify">Nach dem Abitur habe ich, bei der Suche nach neuen Herausforderungen, ein duales Studium bei der Cyberdyne IT GmbH in Köln angefangen. Dort war ich im ersten Jahr vor allem im Bereich Systemintegration und Service tätig.</p>
+                                <p style="text-align: justify">After graduating from high school, I started a dual course of study at Cyberdyne IT GmbH in Cologne while looking for new challenges. In the first year I worked there, mainly in the area of system integration and service.</p>
                             </div><!-- /.timeline-body -->
                         </div><!-- /.timeline-panel -->
                     </li>
@@ -360,7 +361,7 @@ if (navigator.language == 'en')
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                <div class="timeline-position">
-                                    <p>Development Bereich | Cyberdyne</p>
+                                    <p>Development Area | Cyberdyne</p>
                                 </div><!-- /.timeline-position -->
                                 <div class="timeline-date">
                                     <p>November</p>
@@ -370,7 +371,7 @@ if (navigator.language == 'en')
                                 <div class="timeline-body-thumb">
                                     <img src="assets/img/CYBERDYNElogo.png" class="img-res" alt="">
                                 </div><!-- /.timeline-body-thumb -->
-                                <p style="text-align: justify">Nach einem Jahr in der Firma (November 2022) bin ich in die Development Abteilung gegangen und habe mich mit Skripten, Powershell und Automatisierungen auseinander gesetzt.</p>
+                                <p style="text-align: justify">After a year in the company (November 2022) I went to the development department and dealt with scripts, powershell and automation.</p>
                             </div><!-- /.timeline-body -->
                         </div><!-- /.timeline-panel -->
                     </li><!-- /.timeline-inverted -->
@@ -390,9 +391,9 @@ if (navigator.language == 'en')
                 <div class="rectangle">
                    <i class="fa fa-linkedin"></i>
                 </div>
-                <p>Ich bin auch bei LinkedIn</p>
-                <p>Hier findest Du die Möglichkeit Dein Netzwerk zu erweitern und einen Neuen Kontakt zu knüpfen</p>
-                <a href="https://www.linkedin.com/in/simon-lindner" target="_blank" class="btn btn-inverted">Mein Profil</a>
+                <p>I'm also on LinkedIn</p>
+                <p>Here you will find the opportunity to expand your network and make a new contact</p>
+                <a href="https://www.linkedin.com/in/simon-lindner" target="_blank" class="btn btn-inverted">My Profil</a>
             </div>
         </section><!-- /.section-LinkedIn-->
         <!-- End LinkedIn section --> 
@@ -430,11 +431,11 @@ if (navigator.language == 'en')
             <ul class="list-unstyled list-inline">
                 <li class="page-scroll"><a href="#top">Home</a></li>
                 <li class="page-scroll"><a href="#intro">Intro</a></li>
-                <li class="page-scroll"><a href="#me">Über Mich</a></li>
+                <li class="page-scroll"><a href="#me">About Me</a></li>
                 <li class="page-scroll"><a href="#history">History</a></li>
-                <li class="page-scroll"><a href="#kontakt">Kontakt</a></li>
-				<li class="page-scroll"><a href="./impressum.html">Impressum</a></li>
-				<li class="page-scroll"><a href="ForPeopleThatSpeakEnglish.html">English</a></li>
+                <li class="page-scroll"><a href="#kontakt">Contact</a></li>
+				<li class="page-scroll"><a href="./impressum.html">Legal Information</a></li>
+				<li class="page-scroll"><a href="./">Deutsch</a></li>
             </ul>
 
             <div class="page-scroll">
@@ -482,7 +483,7 @@ if (navigator.language == 'en')
     <!-- Custom JS -->
     <script src="assets/js/script.js"></script>
 
-<script src="assets/js/Skripte.js"></script>
+<script src="assets/js/Scripts.js"></script>
 
 </body>
 
