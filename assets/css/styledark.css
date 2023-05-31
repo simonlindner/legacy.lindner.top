@@ -28,7 +28,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Arial",'Varela';
 }
  @media only screen and (min-width: 805px) and (max-width: 900px)  {
   /* HEADER */
@@ -1290,7 +1290,7 @@ font-size: 30pt;
 }
 
 .site-section h2 {
-  font-family: "Varela", sans-serif;
+  font-family: "Arial", 'Valera';
   margin: 0;
   font-size: 32px;
   color: #703373;
@@ -3132,7 +3132,7 @@ textarea.form-control {
 	height: 80pt;
 	top: 0;
 	bottom: 0;
-	filter: url(#threshold) blur(0.6px);
+	filter: url(#threshold) blur(0.3px);
 }
 @-moz-document url-prefix() {
   #container{
@@ -3144,7 +3144,7 @@ textarea.form-control {
 	position: absolute;
 	width: 100%;
 	display: inline-block;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Rockwell';
 	font-size:80pt;
 	text-align: center;
 	user-select: none;
