@@ -3,7 +3,6 @@
  * Author me@simon-lindner.de
  * Version: 65.0
  */
-
 @import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
 /* CUSTOM RESETS
 ================================================== */
@@ -400,7 +399,7 @@ html, body {
 #text1{
 	font-size:80pt;
 }
-#text2{
+#{
 	font-size:80pt;
 }
 }
@@ -1015,7 +1014,13 @@ font-size: 30pt;
     padding: 25px 0;
   }
 }
-
+@media only screen and (min-width: 805px) {
+#text1{
+font-size: 80pt;
+}
+#text2{
+font-size: 80pt;
+}}
 @media only screen and (max-width: 991px) {
   /* Section: Hello */
   .big-rectangle {
@@ -2585,7 +2590,12 @@ textarea.form-control {
   -moz-transition: all 0.25s linear;
   transition: all 0.25s linear;
 }
-
+.modal-open #main > div.switch{
+	display:none;
+}
+  #contact > div > div > form > div:nth-child(3) > button{
+	  transition:none;
+  }
 .modal.fade-scale.in {
   opacity: 1;
   transform: scale(1);
@@ -2602,10 +2612,8 @@ textarea.form-control {
   -moz-transform: translate(0, 0%);
   -o-transform: translate(0, 0%);
   -ms-transform: translate(0, 0%);
-}
-
-.modal-header {
-  height: 400px;
+  width: fit-content;
+  height: fit-content;
 }
 
 .modal-header .rectangle {
@@ -2646,6 +2654,8 @@ textarea.form-control {
   padding: 0;
   border-radius: 0;
   border: 0;
+  width: fit-content;
+  height: fit-content;
 }
 
 .modal-content p {
@@ -2654,13 +2664,14 @@ textarea.form-control {
 
 .modal-content .btn {
   width: 100%;
-  border-width: 1px 0 0 0;
+  border-width: 1px;
+  padding-top:0px;
 }
 
 @media only screen and (max-width: 767px) {
   /* MODALS */
   .modal-dialog {
-    margin: 30px 30px 10px 10px;
+    margin: 30px auto 10px auto;
   }
   .modal-header .rectangle {
     right: -18px;

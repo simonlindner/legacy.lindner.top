@@ -41,18 +41,6 @@
     
      <!-- Fork Awesome core CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
-<script>
-if (navigator.language == 'en')
-{
-	if(localStorage.getItem("language"))
-	{}
-	else
-	{
-		localStorage.setItem("language", "x");
-		setTimeout(window.alert("Your browser is set to English. Therefore you will now see the English version of the page. If you want to go to the German page, scroll to the bottom of the page and click on 'Deutsch' ^^"),5000);
-	}
-}
-</script>
 </head>
 <body>
     <div id="top" class="hero">
@@ -244,7 +232,7 @@ if (navigator.language == 'en')
 					
 
                         <h2>About me</h2>
-						<img class="pictureSimon" src="assets/img/simonlindnercrop.jpg" title="Simon Lindner"><h2></h2><p style="text-align: justify; width:auto">Hi ^^, <br> I'm Simon Lindner at the moment <span id="MeinAlter"></span> years old and I work at the Cyberdyne IT GmbH in Cologne as a dual student
+						<img class="pictureSimon" src="assets/img/simonlindnercrop.jpg" title="Simon Lindner"><h2></h2><p style="text-align: justify; width:auto">Hi ^^, <br> I'm Simon Lindner at the moment <span id="MeinAlter"></span> years old and I work at the CYBERDYNE IT GmbH in Cologne as a dual student
 						in the area of ​​development. My interest in computer science started in the 8th grade of high school during the IT course. There I made my first experiences with IT and programming
 						in the form of HTML and CSS. In the years that followed, I worked intensively with Java and completed my Abitur with computer science as the third high school subject. After
 						I finished school I was looking for a challenge and found it in Cyberdyne. My start at the company began in the winter semester of 2021. Until November 2022 I worked there in the area of
@@ -339,7 +327,7 @@ if (navigator.language == 'en')
                                 <div class="timeline-body-thumb">
                                     <img src="assets/img/CYBERDYNElogo.png" class="img-res" alt="" >
                                 </div><!-- /.timeline-body-thumb -->
-                                <p style="text-align: justify">After graduating from high school, I started a dual course of study at the Cyberdyne IT GmbH in Cologne while looking for new challenges. In the first year I mainly worked there in the area of system integration and service.</p>
+                                <p style="text-align: justify">After graduating from high school, I started a dual course of study at the CYBERDYNE IT GmbH in Cologne while looking for new challenges. In the first year I mainly worked there in the area of system integration and service.</p>
                             </div><!-- /.timeline-body -->
                         </div><!-- /.timeline-panel -->
                     </li>
@@ -385,9 +373,13 @@ if (navigator.language == 'en')
                 <div class="rectangle">
                    <i class="fa fa-linkedin"></i>
                 </div>
-                <p>I'm also on LinkedIn</p>
+				<div class="rectangle">
+                   <i class="fa fa-xing"></i>
+                </div>
+                <p>I'm also on LinkedIn and Xing</p>
                 <p>Here you will find the opportunity to expand your network and make a new contact</p>
-                <a href="https://www.linkedin.com/in/simon-lindner" target="_blank" class="btn btn-inverted">My Profil</a>
+                <a href="https://www.linkedin.com/in/simon-lindner" target="_blank" class="btn btn-inverted">LinkedIn</a>
+				<a href="https://www.xing.com/profile/Simon_Lindner104" target="_blank" class="btn btn-inverted">Xing</a>
             </div>
         </section><!-- /.section-LinkedIn-->
         <!-- End LinkedIn section --> 
@@ -395,17 +387,17 @@ if (navigator.language == 'en')
         <!-- Social Networks section --> 
         <section class="section-networks blue-bg">
             <div class="container">
-				<a href="https://www.instagram.com/tryx3r/?hl=de" target="_blank" class="rectangle">
+				<a href="https://www.instagram.com/simon.lndr/?hl=de" target="_blank" class="rectangle">
                     <i class="fa fa-instagram"></i>
                 </a>
                 <a href="https://www.xing.com/profile/Simon_Lindner104" target="_blank" class="rectangle">
                     <i class="fa fa-xing" aria-hidden="true"></i>
                 </a>
+				<a href="#" class="rectangle" data-toggle="modal" data-target="#contactmodal">
+                    <i class="fa fa-envelope"></i>
+                </a>
                 <a href="https://www.linkedin.com/in/simon-lindner" target="_blank" class="rectangle">
                     <i class="fa fa-linkedin"></i>
-                </a>
-                <a href="mailto:simon@lindner.day" target="_blank" class="rectangle">
-                    <i class="fa fa-envelope"></i>
                 </a>
                 <a href="https://github.com/simonlindner" target="_blank" class="rectangle">
                     <i class="fa fa-github"></i>
@@ -413,7 +405,39 @@ if (navigator.language == 'en')
             </div>
         </section><!-- /.section-networks-->
         <!-- End Social Networks section --> 
-
+		<!-- Modals -->
+    <div id="contactmodal" class="modal fade fade-scale" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                </div>
+                <div class="modal-body">
+                    <!-- Contacts section -->
+        <section class="site-section section-contact" id="contact">
+            <div class="container">
+                <h2>Contact?</h2>
+                <p class="section-subtitle"><span>Do it here!</span></p>
+                <div class="row">
+                    <form action="\assets\contact\sendEmail.html" method="get">
+                        <div class="col-md-4">
+                            <input class="form-control" name="subject" type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="col-sm-12">
+                            <textarea class="form-control" name="body" placeholder="Your Message"  required></textarea>
+                        </div>
+                        <div class="col-sm-12">
+                            <button class="btn btn-inverted" type="submit">Send Message</button>
+                        </div>  
+                    </form>
+                </div>
+            </div>
+        </section><!-- /.section-contact-->
+        <!-- End Contacts section -->
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog-->
+    </div><!-- /.modal -->
     </main><!-- /#main -->
     <!-- End Main content -->
 
@@ -441,7 +465,7 @@ if (navigator.language == 'en')
         </div>
 
         <div class="container text-center">
-            <p class="copyright"><a href="https://login.simon-lindner.de" target="_blank" focusable="false" tabindex="-1">&copy;</a> Simon Lindner - 2023</a></p>
+            <p class="copyright"><a href="https://login.lindner.top" target="_blank" focusable="false" tabindex="-1">&copy;</a> Simon Lindner - 2023</a></p>
         </div>
 
     </footer><!-- /#footer -->
@@ -477,7 +501,7 @@ if (navigator.language == 'en')
     <!-- Custom JS -->
     <script src="assets/js/script.js"></script>
 
-<script src="assets/js/Scripts.js"></script>
+	<script src="assets/js/Scripts.js"></script>
 
 </body>
 

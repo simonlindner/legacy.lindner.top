@@ -3,7 +3,6 @@
  * Author me@simon-lindner.de
  * Version: 65.0
  */
-
 @import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
 /* CUSTOM RESETS
 ================================================== */
@@ -79,7 +78,6 @@ html, body {
   text-transform: uppercase;
 padding-top: 12px;
 }
-
 .btn-inverted {
   color: #ffffff;
   background-color: transparent;
@@ -423,7 +421,13 @@ padding-top: 12px;
     bottom: 10px;
   }
 }
-
+@media only screen and (min-width: 805px) {
+#text1{
+font-size: 80pt;
+}
+#text2{
+font-size: 80pt;
+}}
 @media only screen and (max-width: 991px) {
   /* HEADER */
   .site-navigation .navbar-nav > li + li > a {
@@ -876,6 +880,15 @@ font-size: 30pt;
    {
 	color: #000;   
    }
+   #contactmodal > div > div > div.modal-header > a{
+	   filter: invert(100%)
+   }
+	.fa.fa-times{
+		color:black;
+	}
+   .section-contact{
+	   filter: invert(100%)
+   }
    .site-navigation
     {
 	background-color: #8fcc8c;   
@@ -965,6 +978,19 @@ font-size: 30pt;
   .fa-angle-double-up:hover
   {
 	color: #000;
+  }
+  .col-sm-12{
+	filter: invert(100%)
+  }
+	  .form-control:focus{
+	filter: invert(100%);
+	background-color: black;
+  }
+    #contact > div > div > form > div:nth-child(3) > button:hover{
+	  filter:invert(100%);
+  }
+  #contact > div > div > form > div:nth-child(3) > button{
+	  transition:none;
   }
 }
 @media (prefers-color-scheme: light)  {
@@ -1126,6 +1152,28 @@ font-size: 30pt;
   {
 	color: #000;
   }
+  #contactmodal > div > div > div.modal-header > a{
+	   filter: invert(100%)
+   }
+   .section-contact{
+	   filter: invert(100%)
+   }
+   .fa.fa-times{
+		color:black;
+	}
+	.col-sm-12{
+		filter: invert(100%)
+	}
+	  .form-control:focus{
+	filter: invert(100%);
+	background-color: black;
+  }
+    #contact > div > div > form > div:nth-child(3) > button:hover{
+	  filter:invert(100%);
+  }
+  #contact > div > div > form > div:nth-child(3) > button{
+	  transition:none;
+  }
 }
 @media (prefers-color-scheme: dark)  {
   html
@@ -1273,6 +1321,31 @@ font-size: 30pt;
   .fa-angle-double-up:hover
   {
 	color: #000;
+  }
+  #contactmodal > div > div > div.modal-header > a{
+	   filter: invert(100%)
+   }
+   .section-contact{
+	   filter: invert(100%)
+   }
+   .col-md-4{
+	   filter: invert(100%)
+   }
+   	.fa.fa-times{
+		color:black;
+	}
+	.col-sm-12{
+		filter: invert(100%)
+	}
+	  .form-control:focus{
+	filter: invert(100%);
+	background-color: black;
+  }
+    #contact > div > div > form > div:nth-child(3) > button:hover{
+	  filter:invert(100%);
+  }
+  #contact > div > div > form > div:nth-child(3) > button{
+	  transition:none;
   }
 }
 /* SITEMAIN
@@ -2899,6 +2972,7 @@ transform: scale(0.8);
 .section-contact .btn:hover {
   color: #ffffff;
   border-color: #703373;
+  background-color:#703373;
 }
 
 .form-control {
@@ -3041,7 +3115,9 @@ textarea.form-control {
   -moz-transition: all 0.25s linear;
   transition: all 0.25s linear;
 }
-
+.modal-open #main > div.switch{
+	display:none;
+}
 .modal.fade-scale.in {
   opacity: 1;
   transform: scale(1);
@@ -3058,11 +3134,11 @@ textarea.form-control {
   -moz-transform: translate(0, 0%);
   -o-transform: translate(0, 0%);
   -ms-transform: translate(0, 0%);
+    width: fit-content;
+  height: fit-content;
 }
 
-.modal-header {
-  height: 400px;
-}
+
 
 .modal-header .rectangle {
   position: absolute;
@@ -3102,6 +3178,8 @@ textarea.form-control {
   padding: 0;
   border-radius: 0;
   border: 0;
+  width: fit-content;
+  height: fit-content;
 }
 
 .modal-content p {
@@ -3110,13 +3188,14 @@ textarea.form-control {
 
 .modal-content .btn {
   width: 100%;
-  border-width: 1px 0 0 0;
+  border-width: 1px ;
+  padding-top:0px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 850px) {
   /* MODALS */
   .modal-dialog {
-    margin: 30px 30px 10px 10px;
+    margin: 30px auto 10px auto;
   }
   .modal-header .rectangle {
     right: -18px;

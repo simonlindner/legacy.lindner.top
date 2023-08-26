@@ -15,7 +15,7 @@
 
     <!-- Mobile Specific Metas
     ================================================== -->
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
 
     <!-- Fonts -->
@@ -44,11 +44,8 @@
 <script>
 if (navigator.language == 'en')
 {
-	if(localStorage.getItem("language"))
-	{}
-	else
-	{
-		location.replace('https://simon-lindner.de/ForPeopleThatSpeakEnglish.html');
+	if(localStorage.getItem("firstvisit") == "true"){
+	location.replace('https://simon-lindner.de/ForPeopleThatSpeakEnglish');
 	}
 }
 </script>
@@ -242,7 +239,7 @@ if (navigator.language == 'en')
 						<div class="col-sm-6">
 
                         <h2>Über mich</h2>
-						<img class="pictureSimon" src="assets/img/simonlindnercrop.jpg" title="Simon Lindner"><h2></h2><p style="text-align: justify; width:auto">Hi ^^, <br> Ich bin Simon Lindner aktuell <span id="MeinAlter"></span> Jahre alt und arbeite bei der Cyberdyne IT GmbH in Köln als Dualer Student 
+						<img class="pictureSimon" src="assets/img/simonlindnercrop.jpg" title="Simon Lindner"><h2></h2><p style="text-align: justify; width:auto">Hi ^^, <br> Ich bin Simon Lindner aktuell <span id="MeinAlter"></span> Jahre alt und arbeite bei der CYBERDYNE IT GmbH in Köln als Dualer Student 
 						im Bereich Development. Mein Interesse an Informatik begann in der 8ten Klasse des Gymnasiums im Laufe des IT-Kurses. Dort habe ich erste Erfahrungen mit der IT und dem Programmieren, 
 						in Form von HTML und CSS gemacht. In den darauffolgenden Jahren habe ich mich intensiv mit Java beschäftigt und mein Abitur mit Informatik als drittem Abiturfach abgeschlossen. Nach der 
 						Schulzeit habe ich dann eine Herausforderung gesucht und diese in Cyberdyne gefunden. Mein Start in die Firma begann im Wintersemester 2021. Bis zum November 2022 habe ich dort im Bereich der 
@@ -337,7 +334,7 @@ if (navigator.language == 'en')
                                 <div class="timeline-body-thumb">
                                     <img src="assets/img/CYBERDYNElogo.png" class="img-res" alt="" >
                                 </div><!-- /.timeline-body-thumb -->
-                                <p style="text-align: justify">Nach dem Abitur habe ich, bei der Suche nach neuen Herausforderungen, ein duales IT-Studium bei der Cyberdyne IT GmbH in Köln und der IU - Internationale Hochschule - angefangen. Dort war ich im ersten Jahr vor allem im Bereich Systemintegration und Service tätig.</p>
+                                <p style="text-align: justify">Nach dem Abitur habe ich, bei der Suche nach neuen Herausforderungen, ein duales IT-Studium bei der CYBERDYNE IT GmbH in Köln und der IU - Internationale Hochschule - angefangen. Dort war ich im ersten Jahr vor allem im Bereich Systemintegration und Service tätig.</p>
                             </div><!-- /.timeline-body -->
                         </div><!-- /.timeline-panel -->
                     </li>
@@ -383,9 +380,13 @@ if (navigator.language == 'en')
                 <div class="rectangle">
                    <i class="fa fa-linkedin"></i>
                 </div>
-                <p>Ich bin auch bei LinkedIn</p>
+				<div class="rectangle">
+                   <i class="fa fa-xing"></i>
+                </div>
+                <p>Ich bin auch bei LinkedIn und Xing</p>
                 <p>Hier findest Du die Möglichkeit Dein Netzwerk zu erweitern und einen Neuen Kontakt zu knüpfen</p>
-                <a href="https://www.linkedin.com/in/simon-lindner" target="_blank" class="btn btn-inverted">Mein Profil</a>
+                <a href="https://www.linkedin.com/in/simon-lindner" target="_blank" class="btn btn-inverted">LinkedIn</a>
+				<a href="https://www.xing.com/profile/Simon_Lindner104" target="_blank" class="btn btn-inverted">Xing</a>
             </div>
         </section><!-- /.section-LinkedIn-->
         <!-- End LinkedIn section --> 
@@ -393,23 +394,57 @@ if (navigator.language == 'en')
         <!-- Social Networks section --> 
         <section class="section-networks blue-bg">
             <div class="container">
-				<a href="https://www.instagram.com/tryx3r/?hl=de" target="_blank" class="rectangle">
+				<a href="https://www.instagram.com/simon.lndr/?hl=de" target="_blank" class="rectangle">
                     <i class="fa fa-instagram"></i>
                 </a>
                 <a href="https://www.xing.com/profile/Simon_Lindner104" target="_blank" class="rectangle">
                     <i class="fa fa-xing" aria-hidden="true"></i>
                 </a>
+				<a href="#" class="rectangle" data-toggle="modal" data-target="#contactmodal">
+                    <i class="fa fa-envelope"></i>
+                </a>
                 <a href="https://www.linkedin.com/in/simon-lindner" target="_blank" class="rectangle">
                     <i class="fa fa-linkedin"></i>
-                </a>
-                <a href="mailto:simon@lindner.day" target="_blank" class="rectangle">
-                    <i class="fa fa-envelope"></i>
                 </a>
                 <a href="https://github.com/simonlindner" target="_blank" class="rectangle">
                     <i class="fa fa-github"></i>
                 </a>
             </div>
         </section><!-- /.section-networks-->
+		<!-- Modals -->
+    <div id="contactmodal" class="modal fade fade-scale" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                </div>
+                <div class="modal-body">
+                    <!-- Contacts section -->
+        <section class="site-section section-contact" id="contact">
+            <div class="container">
+                <h2>Kontakt?</h2>
+                <p class="section-subtitle"><span>Hier gehts!</span></p>
+                <div class="row">
+                    <form action="\assets\contact\sendEmail.html" method="get">
+                        <div class="col-md-4">
+                            <input class="form-control" name="subject" type="text" placeholder="Betreff" required>
+                        </div>
+                        <div class="col-sm-12">
+                            <textarea class="form-control" name="body" placeholder="Nachricht"  required></textarea>
+                        </div>
+                        <div class="col-sm-12">
+                            <button class="btn btn-inverted" type="submit">Nachricht senden</button>
+                        </div>  
+                    </form>
+                </div>
+            </div>
+        </section><!-- /.section-contact-->
+        <!-- End Contacts section -->
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog-->
+    </div><!-- /.modal -->
+        </section>
         <!-- End Social Networks section --> 
 
     </main><!-- /#main -->
@@ -439,7 +474,7 @@ if (navigator.language == 'en')
         </div>
 
         <div class="container text-center">
-            <p class="copyright"><a href="https://login.simon-lindner.de" target="_blank" focusable="false" tabindex="-1">&copy;</a> Simon Lindner - 2023</a></p>
+            <p class="copyright"><a href="https://login.lindner.top" target="_blank" focusable="false" tabindex="-1">&copy;</a> Simon Lindner - 2023</a></p>
         </div>
 
     </footer><!-- /#footer -->
@@ -475,7 +510,7 @@ if (navigator.language == 'en')
     <!-- Custom JS -->
     <script src="assets/js/script.js"></script>
 
-<script src="assets/js/Skripte.js"></script>
+	<script src="assets/js/Skripte.js"></script>
 
 </body>
 
