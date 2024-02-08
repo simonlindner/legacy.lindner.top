@@ -176,3 +176,5 @@ var Alter = heute - Geburtsdatum;
 var Alter = Math.floor(Alter/31536000000);
 
 document.querySelector("#MeinAlter").innerHTML = Alter;
+
+document.querySelector("#CurrentYear").innerHTML = heute.getFullYear();
