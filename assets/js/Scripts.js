@@ -169,12 +169,12 @@ console.log("P.S.: I put a hidden link on the page that leads to something that 
 console.log("------------------------------------")
 var heute = new Date();
 
-var Geburtsdatum = new Date(2003, 03, 10); //10.10.1982
+var Geburtsdatum = new Date('March 10, 2003 00:00:00');
 
 var Alter = heute - Geburtsdatum;
 
 var Alter = Math.floor(Alter/31536000000);
 
-document.querySelector("#MeinAlter").innerHTML = Alter;
+document.querySelector("#MyAge").innerHTML = Alter;
 
 document.querySelector("#CurrentYear").innerHTML = heute.getFullYear();
