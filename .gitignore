@@ -1,0 +1,9 @@
+# Alles ignorieren
+*
+
+# Aber den public-Ordner und dessen Inhalt erlauben
+!public/
+!public/**
+
+# .gitignore selbst nicht ignorieren (optional, aber nützlich)
+!.gitignore
