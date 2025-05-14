@@ -1,9 +1,8 @@
-# Alles ignorieren
+# Exclude everything
 *
 
-# Aber den public-Ordner und dessen Inhalt erlauben
+# except...
 !public/
 !public/**
-
-# .gitignore selbst nicht ignorieren (optional, aber nützlich)
 !.gitignore
+!README.md
