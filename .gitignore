@@ -4,5 +4,7 @@
 # except...
 !public/
 !public/**
+!.github/
+!.github/**
 !.gitignore
 !README.md
