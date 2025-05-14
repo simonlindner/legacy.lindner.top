@@ -7,4 +7,5 @@
 !.github/
 !.github/**
 !.gitignore
+!firebase.json
 !README.md
