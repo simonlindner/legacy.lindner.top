@@ -9,7 +9,7 @@ if (currentTheme)
 	if (currentTheme === "dark") 
 	{
         toggleSwitch.checked = true;
-		stylesheet.setAttribute("href", "assets/css/styledark.css");
+		stylesheet.setAttribute("href", "../assets/css/styledark.css");
 	}
 	else
 	{
@@ -26,12 +26,12 @@ function switchTheme(e)
 {
     if (e.target.checked) 
 	{
-		stylesheet.setAttribute("href", "assets/css/styledark.css");
+		stylesheet.setAttribute("href", "../assets/css/styledark.css");
         localStorage.setItem("theme", 'dark');
     }
     else
 	{      
-		stylesheet.setAttribute("href", "assets/css/stylelight.css");
+		stylesheet.setAttribute("href", "../assets/css/stylelight.css");
         localStorage.setItem("theme", 'light');
     }    
 }
